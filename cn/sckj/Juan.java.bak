@@ -1,0 +1,12 @@
+package cn.sckj;
+
+public class Juan {
+	public int test(int s_a) {
+		s_a++;
+		return s_a;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("hello world");
+	}
+}
