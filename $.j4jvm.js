@@ -549,12 +549,12 @@
 	jvm.directions['1B'] = {code:'iload_1', optNums:0, help:'第二个int型局部变量进栈'};
 	jvm.directions['1C'] = {code:'iload_2', optNums:0, help:'第三个int型局部变量进栈'};
 	jvm.directions['2A'] = {code:'aload_0', optNums:0, help:'将引用型变量送至栈顶'};
-	jvm.directions['3D'] = {code:'iinc', optNums:0, help:'将栈顶int型数值存入第三个局部变量'};
+	jvm.directions['3D'] = {code:'istore_2', optNums:0, help:'将栈顶int型数值存入第三个局部变量'};
 	jvm.directions['59'] = {code:'dup', optNums:0, help:'复制栈顶数值，并且复制值进栈'};
-	jvm.directions['84'] = {code:'istore_2', optNums:2, help:'指定int型变量增加指定值'};
+	jvm.directions['84'] = {code:'iinc', optNums:2, help:'指定int型变量增加指定值'};
 	jvm.directions['A2'] = {code:'if_icmpge', optNums:2, help:'比较栈顶两int型数值大小，当结果大于等于0时跳转'};
 	jvm.directions['AC'] = {code:'ireturn', optNums:0, help:'当前方法返回int'};
-	jvm.directions['A7'] = {code:'goto', optNums:0, help:'无条件跳转'};
+	jvm.directions['A7'] = {code:'goto', optNums:2, help:'无条件跳转'};
 	jvm.directions['B1'] = {code:'return', optNums:0, help:'返回void'};
 	jvm.directions['B2'] = {code:'getstatic', optNums:2, help:'获取指定类的静态域，并将其值压入栈顶'};
 	jvm.directions['B6'] = {code:'invokevirtual', optNums:2, help:'调用实例方法'};
